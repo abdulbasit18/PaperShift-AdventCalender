@@ -99,6 +99,12 @@
 		6E9C58D6240D53FD007AFD22 /* PSAdeventCalender */ = {
 			isa = PBXGroup;
 			children = (
+				6E9C5909240D5678007AFD22 /* Services */,
+				6E9C590A240D5681007AFD22 /* Models */,
+				6E9C590B240D5918007AFD22 /* Views */,
+				6E9C590C240D5924007AFD22 /* ViewModels */,
+				6E9C590D240D5931007AFD22 /* Resources */,
+				6E9C590E240D593C007AFD22 /* Utilities */,
 				6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */,
 				6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */,
 				6E9C58DB240D53FD007AFD22 /* ContentView.swift */,
@@ -134,6 +140,48 @@
 				6E9C58FB240D53FF007AFD22 /* Info.plist */,
 			);
 			path = PSAdeventCalenderUITests;
+			sourceTree = "<group>";
+		};
+		6E9C5909240D5678007AFD22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6E9C590A240D5681007AFD22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E9C590B240D5918007AFD22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E9C590C240D5924007AFD22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6E9C590D240D5931007AFD22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E9C590E240D593C007AFD22 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
