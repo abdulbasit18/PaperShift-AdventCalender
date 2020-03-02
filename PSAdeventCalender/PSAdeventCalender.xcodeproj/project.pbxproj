@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */; };
+		6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */; };
+		6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58DB240D53FD007AFD22 /* ContentView.swift */; };
+		6E9C58DE240D53FE007AFD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C58DD240D53FE007AFD22 /* Assets.xcassets */; };
+		6E9C58E1240D53FE007AFD22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C58E0240D53FE007AFD22 /* Preview Assets.xcassets */; };
+		6E9C58E4240D53FE007AFD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C58E2240D53FE007AFD22 /* LaunchScreen.storyboard */; };
+		6E9C58EF240D53FF007AFD22 /* PSAdeventCalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58EE240D53FF007AFD22 /* PSAdeventCalenderTests.swift */; };
+		6E9C58FA240D53FF007AFD22 /* PSAdeventCalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58F9240D53FF007AFD22 /* PSAdeventCalenderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E9C58EB240D53FF007AFD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E9C58CC240D53FD007AFD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E9C58D3240D53FD007AFD22;
+			remoteInfo = PSAdeventCalender;
+		};
+		6E9C58F6240D53FF007AFD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E9C58CC240D53FD007AFD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E9C58D3240D53FD007AFD22;
+			remoteInfo = PSAdeventCalender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSAdeventCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E9C58DB240D53FD007AFD22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E9C58DD240D53FE007AFD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E9C58E0240D53FE007AFD22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E9C58E3240D53FE007AFD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E9C58E5240D53FE007AFD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9C58EA240D53FF007AFD22 /* PSAdeventCalenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSAdeventCalenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9C58EE240D53FF007AFD22 /* PSAdeventCalenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAdeventCalenderTests.swift; sourceTree = "<group>"; };
+		6E9C58F0240D53FF007AFD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9C58F5240D53FF007AFD22 /* PSAdeventCalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSAdeventCalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9C58F9240D53FF007AFD22 /* PSAdeventCalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAdeventCalenderUITests.swift; sourceTree = "<group>"; };
+		6E9C58FB240D53FF007AFD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E9C58D1240D53FD007AFD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58E7240D53FF007AFD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58F2240D53FF007AFD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E9C58CB240D53FD007AFD22 = {
+			isa = PBXGroup;
+			children = (
+				6E9C58D6240D53FD007AFD22 /* PSAdeventCalender */,
+				6E9C58ED240D53FF007AFD22 /* PSAdeventCalenderTests */,
+				6E9C58F8240D53FF007AFD22 /* PSAdeventCalenderUITests */,
+				6E9C58D5240D53FD007AFD22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E9C58D5240D53FD007AFD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */,
+				6E9C58EA240D53FF007AFD22 /* PSAdeventCalenderTests.xctest */,
+				6E9C58F5240D53FF007AFD22 /* PSAdeventCalenderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E9C58D6240D53FD007AFD22 /* PSAdeventCalender */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */,
+				6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */,
+				6E9C58DB240D53FD007AFD22 /* ContentView.swift */,
+				6E9C58DD240D53FE007AFD22 /* Assets.xcassets */,
+				6E9C58E2240D53FE007AFD22 /* LaunchScreen.storyboard */,
+				6E9C58E5240D53FE007AFD22 /* Info.plist */,
+				6E9C58DF240D53FE007AFD22 /* Preview Content */,
+			);
+			path = PSAdeventCalender;
+			sourceTree = "<group>";
+		};
+		6E9C58DF240D53FE007AFD22 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C58E0240D53FE007AFD22 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E9C58ED240D53FF007AFD22 /* PSAdeventCalenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C58EE240D53FF007AFD22 /* PSAdeventCalenderTests.swift */,
+				6E9C58F0240D53FF007AFD22 /* Info.plist */,
+			);
+			path = PSAdeventCalenderTests;
+			sourceTree = "<group>";
+		};
+		6E9C58F8240D53FF007AFD22 /* PSAdeventCalenderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C58F9240D53FF007AFD22 /* PSAdeventCalenderUITests.swift */,
+				6E9C58FB240D53FF007AFD22 /* Info.plist */,
+			);
+			path = PSAdeventCalenderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E9C58D3240D53FD007AFD22 /* PSAdeventCalender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9C58FE240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalender" */;
+			buildPhases = (
+				6E9C58D0240D53FD007AFD22 /* Sources */,
+				6E9C58D1240D53FD007AFD22 /* Frameworks */,
+				6E9C58D2240D53FD007AFD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSAdeventCalender;
+			productName = PSAdeventCalender;
+			productReference = 6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E9C58E9240D53FF007AFD22 /* PSAdeventCalenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9C5901240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalenderTests" */;
+			buildPhases = (
+				6E9C58E6240D53FF007AFD22 /* Sources */,
+				6E9C58E7240D53FF007AFD22 /* Frameworks */,
+				6E9C58E8240D53FF007AFD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E9C58EC240D53FF007AFD22 /* PBXTargetDependency */,
+			);
+			name = PSAdeventCalenderTests;
+			productName = PSAdeventCalenderTests;
+			productReference = 6E9C58EA240D53FF007AFD22 /* PSAdeventCalenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E9C58F4240D53FF007AFD22 /* PSAdeventCalenderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9C5904240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalenderUITests" */;
+			buildPhases = (
+				6E9C58F1240D53FF007AFD22 /* Sources */,
+				6E9C58F2240D53FF007AFD22 /* Frameworks */,
+				6E9C58F3240D53FF007AFD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E9C58F7240D53FF007AFD22 /* PBXTargetDependency */,
+			);
+			name = PSAdeventCalenderUITests;
+			productName = PSAdeventCalenderUITests;
+			productReference = 6E9C58F5240D53FF007AFD22 /* PSAdeventCalenderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E9C58CC240D53FD007AFD22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Abdul Basit";
+				TargetAttributes = {
+					6E9C58D3240D53FD007AFD22 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					6E9C58E9240D53FF007AFD22 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E9C58D3240D53FD007AFD22;
+					};
+					6E9C58F4240D53FF007AFD22 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E9C58D3240D53FD007AFD22;
+					};
+				};
+			};
+			buildConfigurationList = 6E9C58CF240D53FD007AFD22 /* Build configuration list for PBXProject "PSAdeventCalender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E9C58CB240D53FD007AFD22;
+			productRefGroup = 6E9C58D5240D53FD007AFD22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E9C58D3240D53FD007AFD22 /* PSAdeventCalender */,
+				6E9C58E9240D53FF007AFD22 /* PSAdeventCalenderTests */,
+				6E9C58F4240D53FF007AFD22 /* PSAdeventCalenderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E9C58D2240D53FD007AFD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9C58E4240D53FE007AFD22 /* LaunchScreen.storyboard in Resources */,
+				6E9C58E1240D53FE007AFD22 /* Preview Assets.xcassets in Resources */,
+				6E9C58DE240D53FE007AFD22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58E8240D53FF007AFD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58F3240D53FF007AFD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E9C58D0240D53FD007AFD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */,
+				6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */,
+				6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58E6240D53FF007AFD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9C58EF240D53FF007AFD22 /* PSAdeventCalenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9C58F1240D53FF007AFD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9C58FA240D53FF007AFD22 /* PSAdeventCalenderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E9C58EC240D53FF007AFD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E9C58D3240D53FD007AFD22 /* PSAdeventCalender */;
+			targetProxy = 6E9C58EB240D53FF007AFD22 /* PBXContainerItemProxy */;
+		};
+		6E9C58F7240D53FF007AFD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E9C58D3240D53FD007AFD22 /* PSAdeventCalender */;
+			targetProxy = 6E9C58F6240D53FF007AFD22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E9C58E2240D53FE007AFD22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E9C58E3240D53FE007AFD22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E9C58FC240D53FF007AFD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E9C58FD240D53FF007AFD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E9C58FF240D53FF007AFD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PSAdeventCalender/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PSAdeventCalender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E9C5900240D53FF007AFD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PSAdeventCalender/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PSAdeventCalender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E9C5902240D53FF007AFD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSAdeventCalenderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSAdeventCalender.app/PSAdeventCalender";
+			};
+			name = Debug;
+		};
+		6E9C5903240D53FF007AFD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSAdeventCalenderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSAdeventCalender.app/PSAdeventCalender";
+			};
+			name = Release;
+		};
+		6E9C5905240D53FF007AFD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSAdeventCalenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSAdeventCalender;
+			};
+			name = Debug;
+		};
+		6E9C5906240D53FF007AFD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSAdeventCalenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PS.AdventCalender.PSAdeventCalenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSAdeventCalender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E9C58CF240D53FD007AFD22 /* Build configuration list for PBXProject "PSAdeventCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9C58FC240D53FF007AFD22 /* Debug */,
+				6E9C58FD240D53FF007AFD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9C58FE240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9C58FF240D53FF007AFD22 /* Debug */,
+				6E9C5900240D53FF007AFD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9C5901240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9C5902240D53FF007AFD22 /* Debug */,
+				6E9C5903240D53FF007AFD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9C5904240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalenderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9C5905240D53FF007AFD22 /* Debug */,
+				6E9C5906240D53FF007AFD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E9C58CC240D53FD007AFD22 /* Project object */;
+}
