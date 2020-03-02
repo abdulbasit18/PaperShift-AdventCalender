@@ -199,6 +199,8 @@
 		6E9C590B240D5918007AFD22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E9C5941240D5F59007AFD22 /* MainCalenderView */,
+				6E9C5942240D5F69007AFD22 /* DetailCalenderView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +260,20 @@
 				6E9C5925240D5D36007AFD22 /* Lato-ThinItalic.ttf */,
 			);
 			path = Lato2OFL;
+			sourceTree = "<group>";
+		};
+		6E9C5941240D5F59007AFD22 /* MainCalenderView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainCalenderView;
+			sourceTree = "<group>";
+		};
+		6E9C5942240D5F69007AFD22 /* DetailCalenderView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailCalenderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
