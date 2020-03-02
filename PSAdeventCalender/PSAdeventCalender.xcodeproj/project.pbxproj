@@ -143,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E9C58FE240D53FF007AFD22 /* Build configuration list for PBXNativeTarget "PSAdeventCalender" */;
 			buildPhases = (
+				6E9C5908240D55EF007AFD22 /* ShellScript */,
 				6E9C58D0240D53FD007AFD22 /* Sources */,
 				6E9C58D1240D53FD007AFD22 /* Frameworks */,
 				6E9C58D2240D53FD007AFD22 /* Resources */,
@@ -261,6 +262,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E9C5908240D55EF007AFD22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E9C58D0240D53FD007AFD22 /* Sources */ = {
