@@ -19,6 +19,7 @@
 		6E4FFF82240D632500C60596 /* AdventCalenderListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF81240D632500C60596 /* AdventCalenderListRequest.swift */; };
 		6E4FFF84240D635300C60596 /* TrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF83240D635300C60596 /* TrackerService.swift */; };
 		6E4FFF86240D636300C60596 /* ExperimentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF85240D636300C60596 /* ExperimentService.swift */; };
+		6E4FFF89240D63FE00C60596 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */; };
 		6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */; };
 		6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */; };
 		6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58DB240D53FD007AFD22 /* ContentView.swift */; };
@@ -79,6 +80,7 @@
 		6E4FFF81240D632500C60596 /* AdventCalenderListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventCalenderListRequest.swift; sourceTree = "<group>"; };
 		6E4FFF83240D635300C60596 /* TrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerService.swift; sourceTree = "<group>"; };
 		6E4FFF85240D636300C60596 /* ExperimentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentService.swift; sourceTree = "<group>"; };
+		6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSAdeventCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 				6E4FFF7B240D621000C60596 /* ConfigurationConstants.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		6E4FFF87240D63DB00C60596 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6E9C58CB240D53FD007AFD22 = {
@@ -281,6 +291,7 @@
 		6E9C590E240D593C007AFD22 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E4FFF87240D63DB00C60596 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -514,6 +525,7 @@
 				6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */,
 				6E4FFF79240D616E00C60596 /* AdventCalenderListResponse.swift in Sources */,
 				6E4FFF82240D632500C60596 /* AdventCalenderListRequest.swift in Sources */,
+				6E4FFF89240D63FE00C60596 /* UIFontExtensions.swift in Sources */,
 				6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */,
 				6E4FFF7E240D62EE00C60596 /* APIService.swift in Sources */,
 				6E4FFF77240D615E00C60596 /* AdventItemModel.swift in Sources */,
