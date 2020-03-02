@@ -35,9 +35,6 @@
 		6E9C5937240D5D36007AFD22 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C5923240D5D36007AFD22 /* Lato-Light.ttf */; };
 		6E9C5938240D5D36007AFD22 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C5924240D5D36007AFD22 /* Lato-Medium.ttf */; };
 		6E9C5939240D5D36007AFD22 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E9C5925240D5D36007AFD22 /* Lato-ThinItalic.ttf */; };
-		6E9C593B240D5D9E007AFD22 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C593A240D5D9E007AFD22 /* APIService.swift */; };
-		6E9C593D240D5DD6007AFD22 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C593C240D5DD6007AFD22 /* APIServiceError.swift */; };
-		6E9C5940240D5E2A007AFD22 /* ConfigurationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C593F240D5E2A007AFD22 /* ConfigurationConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +89,6 @@
 		6E9C5923240D5D36007AFD22 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		6E9C5924240D5D36007AFD22 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
 		6E9C5925240D5D36007AFD22 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
-		6E9C593A240D5D9E007AFD22 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		6E9C593C240D5DD6007AFD22 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
-		6E9C593F240D5E2A007AFD22 /* ConfigurationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +185,6 @@
 		6E9C5909240D5678007AFD22 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				6E9C593E240D5E10007AFD22 /* Configuration */,
-				6E9C593A240D5D9E007AFD22 /* APIService.swift */,
-				6E9C593C240D5DD6007AFD22 /* APIServiceError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -267,14 +258,6 @@
 				6E9C5925240D5D36007AFD22 /* Lato-ThinItalic.ttf */,
 			);
 			path = Lato2OFL;
-			sourceTree = "<group>";
-		};
-		6E9C593E240D5E10007AFD22 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				6E9C593F240D5E2A007AFD22 /* ConfigurationConstants.swift */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,10 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */,
-				6E9C593D240D5DD6007AFD22 /* APIServiceError.swift in Sources */,
-				6E9C5940240D5E2A007AFD22 /* ConfigurationConstants.swift in Sources */,
 				6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */,
-				6E9C593B240D5D9E007AFD22 /* APIService.swift in Sources */,
 				6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
