@@ -11,6 +11,7 @@ import SwiftUI
 
 struct GridCell: View {
     var calenderItem: AdventItemModel
+    @State var attempts: Int = 0
     
     var body: some View {
         VStack {
@@ -34,8 +35,35 @@ struct GridCell: View {
                 
             }
             .offset( y: -40)
-            .padding(.bottom, -25)
+            .padding(.bottom, -20)
+        }
+        .modifier(Shake(animatableData: CGFloat(attempts)))
+        .onTapGesture {
+            withAnimation(.default) {
+                withAnimation(.default) {
+        
+                    let calender = Calendar(identifier: .gregorian)
+                    let weekday = calender.component(.weekday, from: Date())
+                    
+                    if self.calenderItem.id > weekday{
+                    self.attempts += 1
+                    }
+                }
+            }
         }
         .font(.headline).foregroundColor(.white)
+    }
+}
+
+
+struct Shake: GeometryEffect {
+    var amount: CGFloat = 10
+    var shakesPerUnit = 3
+    var animatableData: CGFloat
+
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        ProjectionTransform(CGAffineTransform(translationX:
+            amount * sin(animatableData * .pi * CGFloat(shakesPerUnit)),
+            y: 0))
     }
 }
