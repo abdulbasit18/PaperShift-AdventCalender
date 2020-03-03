@@ -99,7 +99,7 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
         cancellables += [
             calenderStream,
             errorStream,
-            errorMessageStream,
+            errorMessageStream
         ]
     }
 }

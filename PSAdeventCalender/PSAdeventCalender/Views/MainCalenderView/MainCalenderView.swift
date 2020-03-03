@@ -18,22 +18,23 @@ struct MainCalenderView: View {
             self.backgroud
             .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("papershift_logo")
+                Image("papershift_logo") // Logo
                     .shadow(color: .primary, radius: 10, x: -1, y: 0.05)
                 Spacer()
-                self.gridView(geometry)
+                self.gridView(geometry) // Add GridView to Show Calender Items
             }
             .alert(isPresented: self.$viewModel.isErrorShown, content: { () -> Alert in
                 Alert(title: Text("Error"), message: Text(self.viewModel.errorMessage))
                    })
           }
         }
-        .onAppear(perform: { self.viewModel.apply(.onAppear) })
+        .onAppear(perform: { self.viewModel.apply(.onAppear) }) // Call API for Data Fetching
       }
 
     private var backgroud: Color {
         return .white
     }
+    
     private func gridView( _ geometry: GeometryProxy) -> some View {
         GridView(viewModel.calenderItems) {
         GridCell(calenderItem: $0)

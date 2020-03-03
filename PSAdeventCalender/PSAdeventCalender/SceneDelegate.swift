@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        //MainCalenderViewModel can be injeted through using Swift injection
+        //MainCalenderViewModel can be injeted through DI
         //Due to time constraint i am not using it 
         let contentView = MainCalenderView(viewModel: MainCalenderViewModel.init())
 

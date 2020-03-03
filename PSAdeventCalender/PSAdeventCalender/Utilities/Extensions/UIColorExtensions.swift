@@ -9,10 +9,10 @@
 import SwiftUI
 
 extension Color {
-    static var secondayTextColor: Color{
+    static var secondayTextColor: Color {
         return Color("SecondayColor")
     }
-    static var primaryTextColor: Color{
+    static var primaryTextColor: Color {
         return Color("PrimaryColor")
     }
 }

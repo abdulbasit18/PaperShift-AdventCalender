@@ -14,12 +14,10 @@ struct DetailCalenderView: View {
     
     var body: some View {
         VStack {
-            Image("papershift_logo")
+            Image("papershift_logo") // Add Logo
                 .shadow(color: .primary, radius: 10, x: -1, y: 0.05)
                 .padding()
-//            Spacer()
-            
-            Image(calenderItem.image ?? "")
+            Image(calenderItem.image ?? "") // Add Main Image
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
@@ -28,12 +26,12 @@ struct DetailCalenderView: View {
                 .padding()
             
             VStack {
-                Text(calenderItem.announcementTitle ?? "")
+                Text(calenderItem.announcementTitle ?? "") // Text for Announcement
                     .font(Font.appSemiBoldFontWith(size: 40))
                     .foregroundColor(Color.primaryTextColor)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color.primary, radius: 4, x: 0.5, y: 0.005)
-                Text(calenderItem.annouchmentMessage ?? "")
+                Text(calenderItem.annouchmentMessage ?? "") // Text for Message
                     .font(Font.appItalicFontWith(size: 25))
                     .foregroundColor(Color.secondayTextColor)
                     .multilineTextAlignment(.center)
