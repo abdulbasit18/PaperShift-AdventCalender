@@ -68,7 +68,7 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
             .sink(receiveValue: trackerService.log)
         
         let trackingStream = onAppearSubject
-            .map { .listView }
+            .map { .gridView }
             .subscribe(trackingSubject)
         
         cancellables += [
