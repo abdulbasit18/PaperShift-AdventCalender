@@ -81,7 +81,7 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
     
     private func bindOutputs() {
         let calenderStream = responseSubject
-            .map { $0.items }
+            .map { $0.items.shuffled() }
             .assign(to: \.calenderItems, on: self)
         
         let errorMessageStream = errorSubject
