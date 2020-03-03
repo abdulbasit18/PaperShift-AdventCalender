@@ -15,7 +15,7 @@ struct GridCell: View {
     @State private var showingPopupA = false
     var body: some View {
         VStack {
-            Image("Avatar")
+            Image(calenderItem.image ?? "")
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
@@ -36,24 +36,7 @@ struct GridCell: View {
             .offset( y: -40)
             .padding(.bottom, -20)
         }.popover(isPresented: self.$showingPopupA) { // Add Popover Screen
-            DetailCalenderView()
-//            VStack {
-//                Image("Avatar")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .clipShape(Circle())
-//                    .shadow(color: .primary, radius: 5)
-//                    .padding([.horizontal, .top], 7)
-//                VStack {
-//                    Text(String("Test"))
-//                        .font(Font.appSemiBoldFontWith(size: 40))
-//                        .foregroundColor(Color.primaryTextColor)
-//                        .shadow(color: Color.primary, radius: 4, x: 0.5, y: 0.005)
-//                    Text("Test")
-//                        .font(Font.appItalicFontWith(size: 15))
-//                        .foregroundColor(Color.secondayTextColor)
-//                }
-//            }
+            DetailCalenderView(calenderItem: self.calenderItem) // Should be handled through coordinator but due time constraint its not used
         }
         .modifier(Shake(animatableData: CGFloat(attempts)))
         .onTapGesture {
