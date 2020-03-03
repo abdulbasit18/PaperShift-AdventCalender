@@ -10,30 +10,31 @@ import Foundation
 import SwiftUI
 
 struct GridCell: View {
-  var calenderItem: AdventItemModel
-    @State var rotation: Double = 0
-
-  var body: some View {
-    VStack {
-        Image("papershift_logo")
-        .resizable()
-        .scaledToFit()
-        .clipShape(Circle())
-        .shadow(color: .primary, radius: 5)
-        .padding([.horizontal, .top], 7)
-        .rotation3DEffect(.degrees(rotation), axis: (x: 0, y: 0, z: 1), anchor: .center)
-      Text(calenderItem.title ?? "").lineLimit(1)
-      Text(calenderItem.title ?? "").lineLimit(1)
-
-    }
-        
-    .onTapGesture {
-        withAnimation { () -> Void in
-            (self.rotation == 0) ? (self.rotation = 180) : (self.rotation = 0)
-        }
-    }
+    var calenderItem: AdventItemModel
     
-    .font(.headline).foregroundColor(.white)
-  }
+    var body: some View {
+        VStack {
+            Image("Avatar")
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .shadow(color: .primary, radius: 5)
+                .padding([.horizontal, .top], 7)
+            VStack {
+                Text(String(calenderItem.id))
+                    .lineLimit(1)
+                    .font(Font.appSemiBoldFontWith(size: 40))
+                    .foregroundColor(Color.secondayTextColor)
+                    .shadow(color: Color.primary, radius: 4, x: 0.5, y: 0.005)
+                .padding(EdgeInsets())
+                Text(calenderItem.title ?? "")
+                    .lineLimit(1)
+                    .font(Font.appItalicFontWith(size: 15))
+                    .foregroundColor(Color.primaryTextColor)
+                
+            }
+            .offset( y: -40)
+        }
+        .font(.headline).foregroundColor(.white)
+    }
 }
-
