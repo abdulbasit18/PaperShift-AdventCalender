@@ -30,7 +30,6 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
     @Published private(set) var calenderItems: [AdventItemModel] = []
     @Published var isErrorShown = false
     @Published var errorMessage = ""
-    @Published private(set) var shouldShowIcon = false
     
     private let responseSubject = PassthroughSubject<AdventCalenderListResponse, Never>()
     private let errorSubject = PassthroughSubject<APIServiceError, Never>()
@@ -97,17 +96,12 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
             .map { _ in true }
             .assign(to: \.isErrorShown, on: self)
         
-        let showIconStream = onAppearSubject
-            .map { [experimentService] _ in
-                experimentService.experiment(for: .showIcon)
-            }
-            .assign(to: \.shouldShowIcon, on: self)
+
 
         cancellables += [
             calenderStream,
             errorStream,
             errorMessageStream,
-            showIconStream
         ]
     }
 }
