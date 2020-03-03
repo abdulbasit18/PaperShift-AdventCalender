@@ -10,6 +10,9 @@ import Foundation
 import SwiftUI
 
 extension Font {
+    static func appSemiBoldFontWith(size: CGFloat ) -> Font {
+        return Font.custom("Lato-SemiboldItalic", size: size)
+    }
     static func appRegularFontWith(size: CGFloat ) -> Font {
         return Font.custom("Lato-Regular", size: size)
     }
@@ -20,4 +23,3 @@ extension Font {
         return Font.custom("Lato-Italic", size: size)
     }
 }
-
