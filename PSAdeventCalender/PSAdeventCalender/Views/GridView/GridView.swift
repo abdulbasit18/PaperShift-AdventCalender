@@ -8,11 +8,12 @@
 
 import SwiftUI
 
+
 /// A container that presents rows of data arranged in multiple columns.
 @available(iOS 13.0, OSX 10.15, *)
 public struct GridView<Data, Content>: View
-  where Data: RandomAccessCollection, Content: View, Data.Element: Identifiable {
-  private struct GridIndex: Identifiable { var id: Int }
+  where Data : RandomAccessCollection, Content : View, Data.Element : Identifiable {
+  private struct GridIndex : Identifiable { var id: Int }
   
   // MARK: - STORED PROPERTIES
   
@@ -22,6 +23,7 @@ public struct GridView<Data, Content>: View
   private let hSpacing: CGFloat
   private let vPadding: CGFloat
   private let hPadding: CGFloat
+    
   
   private let data: [Data.Element]
   private let content: (Data.Element) -> Content
@@ -45,7 +47,19 @@ public struct GridView<Data, Content>: View
     self.vPadding = vPadding
     self.hPadding = hPadding
   }
-  
+    
+
+    public init(_ data: Data,content: @escaping (Data.Element) -> Content){
+        self.data = data.map { $0 }
+        self.content = content
+        self.columns = 3
+        self.columnsInLandscape = 3
+        self.vSpacing = 0
+        self.hSpacing = 10.0
+        self.vPadding = 0.0
+        self.hPadding = 10.0
+    }
+
   // MARK: - COMPUTED PROPERTIES
   
   private var rows: Int {
@@ -63,25 +77,27 @@ public struct GridView<Data, Content>: View
   }
   
   /// Declares the content and behavior of this view.
-  public var body : some View {
-    GeometryReader { geometry in
-      ScrollView(showsIndicators: false) {
-        VStack(spacing: self.vSpacing) {
-          ForEach((0..<self.rows).map { GridIndex(id: $0) }) { row in
-            self.rowAtIndex(row.id * self.cols,
-                            geometry: geometry)
+  public var body: some View {
+      GeometryReader { geometry in
+          if !self.data.isEmpty {
+              ScrollView(showsIndicators: false) {
+                  VStack(spacing: self.vSpacing) {
+                      ForEach((0..<self.rows).map { GridIndex(id: $0) }) { row in
+                          self.rowAtIndex(row.id * self.cols,
+                                          geometry: geometry)
+                      }
+                      // Handle last row
+                      if self.data.count % self.cols > 0 {
+                          self.rowAtIndex(self.cols * self.rows,
+                                          geometry: geometry,
+                                          isLastRow: true)
+                      }
+                  }
+              }
+              .padding(.horizontal, self.hPadding)
+              .padding(.vertical, self.vPadding)
           }
-          // Handle last row
-          if self.data.count % self.cols > 0 {
-            self.rowAtIndex(self.cols * self.rows,
-                            geometry: geometry,
-                            isLastRow: true)
-          }
-        }
       }
-      .padding(.horizontal, self.hPadding)
-      .padding(.vertical, self.vPadding)
-    }
   }
   
   // MARK: - `BODY BUILDER` 💪 FUNCTIONS
@@ -107,4 +123,3 @@ public struct GridView<Data, Content>: View
     return width / CGFloat(self.cols)
   }
 }
-
