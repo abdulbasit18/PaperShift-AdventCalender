@@ -10,6 +10,6 @@ import Foundation
 
 struct AdventCalenderListRequest: APIRequestType {
     typealias Response = AdventCalenderListResponse
-    var path: String { return "/bins/19i84y" }
+    var path: String { return "/bins/9cg0m" }
     var queryItems: [URLQueryItem]?
 }
