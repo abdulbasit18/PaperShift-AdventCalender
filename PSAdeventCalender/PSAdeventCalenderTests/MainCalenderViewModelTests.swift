@@ -50,7 +50,7 @@ final class MainCalenderViewModelTests: XCTestCase {
         let viewModel = makeViewModel(trackerService: trackerService)
         
         viewModel.apply(.onAppear)
-        XCTAssertTrue(trackerService.loggedTypes.contains(.listView))
+        XCTAssertTrue(trackerService.loggedTypes.contains(.gridView))
     }
     
     private func makeViewModel(

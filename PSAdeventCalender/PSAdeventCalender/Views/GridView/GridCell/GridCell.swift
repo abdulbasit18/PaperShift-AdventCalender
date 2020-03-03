@@ -12,7 +12,7 @@ import SwiftUI
 struct GridCell: View {
     var calenderItem: AdventItemModel
     @State var attempts: Int = 0
-    
+    @State private var showingPopupA = false
     var body: some View {
         VStack {
             Image("Avatar")
@@ -35,21 +35,39 @@ struct GridCell: View {
             }
             .offset( y: -40)
             .padding(.bottom, -20)
-            NavigationLink(destination: DetailCalenderView()) {
-                Text("Do Something")
-            }
+        }.popover(isPresented: self.$showingPopupA) { // Add Popover Screen
+            DetailCalenderView()
+//            VStack {
+//                Image("Avatar")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .clipShape(Circle())
+//                    .shadow(color: .primary, radius: 5)
+//                    .padding([.horizontal, .top], 7)
+//                VStack {
+//                    Text(String("Test"))
+//                        .font(Font.appSemiBoldFontWith(size: 40))
+//                        .foregroundColor(Color.primaryTextColor)
+//                        .shadow(color: Color.primary, radius: 4, x: 0.5, y: 0.005)
+//                    Text("Test")
+//                        .font(Font.appItalicFontWith(size: 15))
+//                        .foregroundColor(Color.secondayTextColor)
+//                }
+//            }
         }
         .modifier(Shake(animatableData: CGFloat(attempts)))
         .onTapGesture {
             withAnimation(.default) {
                 withAnimation(.default) {
-        
+                    
                     let calender = Calendar(identifier: .gregorian)
                     let weekday = calender.component(.weekday, from: Date())
-                    
                     if self.calenderItem.id > weekday {
-                    self.attempts += 1}
+                        self.attempts += 1} else {
+                        self.showingPopupA = true
+                    }
                 }
+
             }
         }
         .font(.headline).foregroundColor(.white)

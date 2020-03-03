@@ -9,7 +9,7 @@
 import Foundation
 
 enum TrackEventType {
-    case listView
+    case gridView
 }
 
 protocol TrackerType {
