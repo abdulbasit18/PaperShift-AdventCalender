@@ -24,16 +24,17 @@ struct GridCell: View {
                 Text(String(calenderItem.id))
                     .lineLimit(1)
                     .font(Font.appSemiBoldFontWith(size: 40))
-                    .foregroundColor(Color.secondayTextColor)
+                    .foregroundColor(Color.primaryTextColor)
                     .shadow(color: Color.primary, radius: 4, x: 0.5, y: 0.005)
                 .padding(EdgeInsets())
                 Text(calenderItem.title ?? "")
                     .lineLimit(1)
                     .font(Font.appItalicFontWith(size: 15))
-                    .foregroundColor(Color.primaryTextColor)
+                    .foregroundColor(Color.secondayTextColor)
                 
             }
             .offset( y: -40)
+            .padding(.bottom, -25)
         }
         .font(.headline).foregroundColor(.white)
     }
