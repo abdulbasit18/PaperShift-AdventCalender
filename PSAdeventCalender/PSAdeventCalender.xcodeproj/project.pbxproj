@@ -22,6 +22,7 @@
 		6E4FFF89240D63FE00C60596 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */; };
 		6E4FFF8B240D64F500C60596 /* MainCalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF8A240D64F500C60596 /* MainCalenderViewModel.swift */; };
 		6E4FFF8D240D652300C60596 /* UnidirectionalDataFlowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FFF8C240D652300C60596 /* UnidirectionalDataFlowType.swift */; };
+		6E53EB30240E4FD200CDF99C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53EB2F240E4FD200CDF99C /* UIColorExtensions.swift */; };
 		6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */; };
 		6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */; };
 		6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58DB240D53FD007AFD22 /* ContentView.swift */; };
@@ -85,6 +86,7 @@
 		6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		6E4FFF8A240D64F500C60596 /* MainCalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalenderViewModel.swift; sourceTree = "<group>"; };
 		6E4FFF8C240D652300C60596 /* UnidirectionalDataFlowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidirectionalDataFlowType.swift; sourceTree = "<group>"; };
+		6E53EB2F240E4FD200CDF99C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSAdeventCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				6E4FFF88240D63FE00C60596 /* UIFontExtensions.swift */,
+				6E53EB2F240E4FD200CDF99C /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				6E4FFF80240D630700C60596 /* APIServiceError.swift in Sources */,
 				6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */,
 				6E4FFF79240D616E00C60596 /* AdventCalenderListResponse.swift in Sources */,
+				6E53EB30240E4FD200CDF99C /* UIColorExtensions.swift in Sources */,
 				6E4FFF82240D632500C60596 /* AdventCalenderListRequest.swift in Sources */,
 				6E4FFF89240D63FE00C60596 /* UIFontExtensions.swift in Sources */,
 				6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */,
