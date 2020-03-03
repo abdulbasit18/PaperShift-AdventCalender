@@ -11,4 +11,3 @@ import Foundation
 struct ConfigurationConstants {
     static var baseURL = "https://api.myjson.com"
 }
-

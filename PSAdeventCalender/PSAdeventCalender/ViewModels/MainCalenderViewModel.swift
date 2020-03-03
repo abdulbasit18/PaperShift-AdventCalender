@@ -95,8 +95,6 @@ final class MainCalenderViewModel: ObservableObject, UnidirectionalDataFlowType 
         let errorStream = errorSubject
             .map { _ in true }
             .assign(to: \.isErrorShown, on: self)
-        
-
 
         cancellables += [
             calenderStream,

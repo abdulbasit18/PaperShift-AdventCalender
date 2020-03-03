@@ -27,6 +27,7 @@
 		6E53EB36240E693100CDF99C /* MainCalenderViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53EB35240E693100CDF99C /* MainCalenderViewModelTests.swift */; };
 		6E53EB38240E69CC00CDF99C /* MockTrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53EB37240E69CC00CDF99C /* MockTrackerService.swift */; };
 		6E53EB3A240E69E400CDF99C /* MockExperimentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53EB39240E69E400CDF99C /* MockExperimentService.swift */; };
+		6E53EB3D240E704300CDF99C /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53EB3C240E704300CDF99C /* Shake.swift */; };
 		6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */; };
 		6E9C58DA240D53FD007AFD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */; };
 		6E9C58DC240D53FD007AFD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C58DB240D53FD007AFD22 /* ContentView.swift */; };
@@ -95,6 +96,7 @@
 		6E53EB35240E693100CDF99C /* MainCalenderViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalenderViewModelTests.swift; sourceTree = "<group>"; };
 		6E53EB37240E69CC00CDF99C /* MockTrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrackerService.swift; sourceTree = "<group>"; };
 		6E53EB39240E69E400CDF99C /* MockExperimentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExperimentService.swift; sourceTree = "<group>"; };
+		6E53EB3C240E704300CDF99C /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		6E9C58D4240D53FD007AFD22 /* PSAdeventCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSAdeventCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9C58D7240D53FD007AFD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9C58D9240D53FD007AFD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 				6E53EB2F240E4FD200CDF99C /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6E53EB3B240E703500CDF99C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				6E53EB3C240E704300CDF99C /* Shake.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		6E9C58CB240D53FD007AFD22 = {
@@ -312,6 +322,7 @@
 		6E9C590E240D593C007AFD22 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E53EB3B240E703500CDF99C /* Animations */,
 				6E4FFF87240D63DB00C60596 /* Extensions */,
 			);
 			path = Utilities;
@@ -546,6 +557,7 @@
 				6E4FFF80240D630700C60596 /* APIServiceError.swift in Sources */,
 				6E9C58D8240D53FD007AFD22 /* AppDelegate.swift in Sources */,
 				6E4FFF79240D616E00C60596 /* AdventCalenderListResponse.swift in Sources */,
+				6E53EB3D240E704300CDF99C /* Shake.swift in Sources */,
 				6E53EB30240E4FD200CDF99C /* UIColorExtensions.swift in Sources */,
 				6E4FFF82240D632500C60596 /* AdventCalenderListRequest.swift in Sources */,
 				6E4FFF89240D63FE00C60596 /* UIFontExtensions.swift in Sources */,

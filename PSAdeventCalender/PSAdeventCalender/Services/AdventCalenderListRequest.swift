@@ -13,4 +13,3 @@ struct AdventCalenderListRequest: APIRequestType {
     var path: String { return "/bins/19i84y" }
     var queryItems: [URLQueryItem]?
 }
-

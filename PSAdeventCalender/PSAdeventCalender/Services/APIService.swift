@@ -43,4 +43,3 @@ final class APIService: APIServiceType {
             .eraseToAnyPublisher()
     }
 }
-

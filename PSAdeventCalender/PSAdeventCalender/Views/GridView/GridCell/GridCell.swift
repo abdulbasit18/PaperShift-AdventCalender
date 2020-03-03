@@ -32,10 +32,12 @@ struct GridCell: View {
                     .lineLimit(1)
                     .font(Font.appItalicFontWith(size: 15))
                     .foregroundColor(Color.secondayTextColor)
-                
             }
             .offset( y: -40)
             .padding(.bottom, -20)
+            NavigationLink(destination: DetailCalenderView()) {
+                Text("Do Something")
+            }
         }
         .modifier(Shake(animatableData: CGFloat(attempts)))
         .onTapGesture {
@@ -45,25 +47,11 @@ struct GridCell: View {
                     let calender = Calendar(identifier: .gregorian)
                     let weekday = calender.component(.weekday, from: Date())
                     
-                    if self.calenderItem.id > weekday{
-                    self.attempts += 1
-                    }
+                    if self.calenderItem.id > weekday {
+                    self.attempts += 1}
                 }
             }
         }
         .font(.headline).foregroundColor(.white)
-    }
-}
-
-
-struct Shake: GeometryEffect {
-    var amount: CGFloat = 10
-    var shakesPerUnit = 3
-    var animatableData: CGFloat
-
-    func effectValue(size: CGSize) -> ProjectionTransform {
-        ProjectionTransform(CGAffineTransform(translationX:
-            amount * sin(animatableData * .pi * CGFloat(shakesPerUnit)),
-            y: 0))
     }
 }

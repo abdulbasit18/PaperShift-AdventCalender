@@ -11,7 +11,6 @@ import Combine
 import XCTest
 @testable import PSAdeventCalender
 
-
 final class MainCalenderViewModelTests: XCTestCase {
     
     func test_updateRepositoriesWhenOnAppear() {
