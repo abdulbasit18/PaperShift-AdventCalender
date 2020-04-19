@@ -36,7 +36,8 @@ struct GridCell: View {
             .offset( y: -40)
             .padding(.bottom, -20)
         }.popover(isPresented: self.$showingPopupA) { // Add Popover Screen
-            DetailCalenderView(calenderItem: self.calenderItem) // Should be handled through coordinator but due time constraint its not used
+            DetailCalenderView(calenderItem: self.calenderItem)
+            // Should be handled through coordinator but due time constraint its not used
         }
         .modifier(Shake(animatableData: CGFloat(attempts)))
         .onTapGesture {
